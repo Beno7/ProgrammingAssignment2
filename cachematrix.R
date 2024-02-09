@@ -51,7 +51,7 @@ cacheSolve <- function(x, ...) {
 }
 
 
-# # A function that tests the functionalities of makeCacheMatrix and cacheSolve
+# A function that tests the functionalities of makeCacheMatrix and cacheSolve
 # testFn <- function(testm) {
 #   print('Testing ======== ')
 #   print(testm)
