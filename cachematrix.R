@@ -44,14 +44,14 @@ cacheSolve <- function(x, ...) {
   data <- x$getinv()
   if (is.null(data)) { # Calculate inverse if not yet cached
     data = x$get()
-    data <- solve(data)
+    data <- solve(data, ...)
     x$setinv(data) # Cache Inverse
   }
   data # Return inverse
 }
 
 
-# A function that tests the functionalities of makeCacheMatrix and cacheSolve
+# # A function that tests the functionalities of makeCacheMatrix and cacheSolve
 # testFn <- function(testm) {
 #   print('Testing ======== ')
 #   print(testm)
